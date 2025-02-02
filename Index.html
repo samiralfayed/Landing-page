@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Payment Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <h1>Fintech Payment Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Secure & Scalable Payment Solutions</h2>
+        <p>Empowering businesses with cutting-edge fintech solutions.</p>
+        <button onclick="learnMore()">Learn More</button>
+    </section>
+    
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Card Issuance & Management</li>
+            <li>Multi-Channel Payment Processing</li>
+            <li>Real-Time Analytics</li>
+            <li>AI-Powered Fraud Detection</li>
+            <li>Seamless API Integration</li>
+        </ul>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We provide comprehensive fintech solutions for businesses and financial institutions.</p>
+    </section>
+    
+    <section id="analytics">
+        <h2>Real-Time Analytics</h2>
+        <canvas id="analyticsChart"></canvas>
+    </section>
+    
+    <section id="payment">
+        <h2>Make a Payment</h2>
+        <button id="checkout-button">Pay with Stripe</button>
+    </section>
+    
+    <section id="login">
+        <h2>Login / Signup</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="signUp()">Sign Up</button>
+        <button onclick="logIn()">Log In</button>
+        <button onclick="logOut()">Log Out</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Fintech Payment Solutions. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
